@@ -1,0 +1,53 @@
+/* Chart axes */
+
+body {
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+p {
+  font-size: 11px;
+  padding-left: 50px;
+}
+
+.axis--x path {
+  display: none;
+}
+/*
+.axis--y path {
+  display: none;
+}
+ */
+.axis-label {
+  text-shadow: 0px 1px 1px white;
+}
+
+/* Stock lines */
+
+.line {
+  fill: none;
+  stroke: #111;
+  stroke-width: 1px;
+  z-index: 100;
+  opacity: 0.5;
+}
+
+.line-filtered .line {
+  /* stroke: #eee; */
+  opacity: 0.05;
+}
+
+.line-filtered text {
+  display: none;
+}
+
+/* Filter Boxes */
+
+.filter {
+  fill: rgba(255, 0, 0, 0.07);
+  stroke: red;
+  stroke-width: 1px;
+  cursor: move;
+}
+
+.filter:hover {
+  stroke-width: 1.5px;
+}
